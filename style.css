@@ -1,0 +1,186 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing:
+    border-box;
+}
+
+
+.container{
+    width: 100%;
+    height: 100vh;
+    overflow: visible;
+    background: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.1)), url('goa.jpg') no-repeat center fixed ;
+}
+
+nav{
+    position: fixed;
+    width: 100%;
+    height: 12vh;
+    background: rgba(8, 8, 8, 0.5); 
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-transform: uppercase;
+    z-index: 1;
+}
+nav:hover{
+    background: rgba(0, 0, 0, 0.767);
+}
+
+nav .logo{
+    width: 25%;
+    text-align: center;
+    font-size: 32px;
+    
+}
+
+nav .menu{
+    width: 40%;
+    display: flex;
+    justify-content: space-around;
+}
+
+nav .menu a{
+    text-decoration: none;
+    color: white;
+    /* width: 25%; */
+    font-size: 16px;
+    /* padding: 5px 20px;
+    border: 1px solid #fff;*/
+    transition: 0.6s ease; 
+}
+
+.menu a:hover{
+    background-color: #fff;
+    color: black;
+}
+
+main{
+    width: 100%;
+    height: 85vh;
+    /* background-color: #000; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: white;
+}
+
+section{
+    margin-top: 15%;
+}
+
+section h3{
+
+    font-size: 35px;
+    font-weight: 350;
+    letter-spacing: 5px;
+    text-shadow: 3px 2px 4px black;
+}
+
+section h1{
+    margin: 40px 0 20px 0;
+    font-size: 55px;
+    font-weight: 700;
+    text-shadow: 5px 1px 5px black;
+    text-transform: uppercase;
+}
+
+section p{
+    font-size: 25px;
+    word-spacing: 2px;
+    margin-bottom: 25px;
+    text-shadow: 1px 1px 1px black;
+    background-color: rgba(0,0,0,0.5);
+}
+
+@keyframes bgcolor{
+    0%{
+        background-color: #00b894;
+    }
+    25%{
+        background-color: #e6ff08;
+    }
+    5%{
+        background-color: #e94614;
+    }
+    75%{
+        background-color: #25e425;
+    }
+    100%{
+        background-color: #7831c9;
+    }
+}
+
+.cc::after{
+    content: '';
+    animation: Changetext 12s infinite linear;
+    color: #00b894;
+}
+
+@keyframes Changetext{
+    0%{content:"Jaipur";}
+    20%{content:"Varanasi";}
+    40%{content: "Kerela";}
+    60%{content: "Ladakh";}
+    80%{content: "Goa";}
+    100%{content: "Mumbai";}
+}
+
+@media only screen and (min-width: 768 px){
+    .container{
+        width: 100%;
+        height: 100vh;
+        overflow: visible;
+        background: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.1)), url('goa.jpg') no-repeat center fixed ;
+        display: block;
+        padding-bottom: 30px;
+    }
+
+    nav{
+        position: fixed;
+        width: 600px;
+        height: 12vh;
+        background: rgba(8, 8, 8, 0.5); 
+        color: white;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        text-transform: uppercase;
+        z-index: 1;
+    }
+    nav:hover{
+        background: rgba(0, 0, 0, 0.767);
+    }
+    
+    nav .logo{
+        width: 25%;
+        text-align: center;
+        font-size: 32px;
+        
+    }
+    
+    nav .menu{
+        width: 40%;
+        display: flex;
+        justify-content: space-around;
+    }
+    
+    nav .menu a{
+        text-decoration: none;
+        color: white;
+        /* width: 25%; */
+        font-size: 16px;
+        /* padding: 5px 20px;
+        border: 1px solid #fff;*/
+        transition: 0.6s ease; 
+    }
+    
+    .menu a:hover{
+        background-color: #fff;
+        color: black;
+    }
+
+}
